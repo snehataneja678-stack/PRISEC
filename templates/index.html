@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prisec</title>
+</head>
+<body>
+
+    <h1>Prisec</h1>
+    <p>Website Privacy & Security Checker</p>
+
+    <form method="POST">
+        <input type="text" name="url" placeholder="Enter website URL">
+        <button type="submit">Scan</button>
+    </form>
+
+    {% if url %}
+        <h3>You entered:</h3>
+        <p>{{ url }}</p>
+    {% endif %}
+
+</body>
+</html>
